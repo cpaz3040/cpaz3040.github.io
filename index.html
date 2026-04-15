@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos comparativos</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+    h1 {
+      text-align: center;
+      margin: 0 0 28px;
+      font-size: 32px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 22px;
+      line-height: 1.35;
+      margin: 0 0 16px;
+      min-height: 88px;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    @media (max-width: 980px) {
+      .grid { grid-template-columns: 1fr; }
+      h2 { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Comparación de audio y video</h1>
+    <section class="grid">
+      <article class="card">
+        <h2>1 Asi ve escucha la TV en otros departamentos</h2>
+        <div class="video-wrap">
+          <iframe src="https://player.vimeo.com/video/1051031096?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="rotating shoe tower 1"
+            allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>2 Asi ve escucha la música en otros departamentos</h2>
+        <div class="video-wrap">
+          <iframe src="https://player.vimeo.com/video/1051031096?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="rotating shoe tower 2"
+            allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>3 Asi ve escucha la TV en otros pisos</h2>
+        <div class="video-wrap">
+          <iframe src="https://player.vimeo.com/video/1051031096?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="rotating shoe tower 3"
+            allowfullscreen></iframe>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <!-- Default Statcounter code for Cpaz https://cpaz3040.github.io/ -->
+  <script type="text/javascript">
+  var sc_project=12792447;
+  var sc_invisible=1;
+  var sc_security="71db354f";
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank" rel="noopener noreferrer"><img
+  class="statcounter"
+  src="https://c.statcounter.com/12792447/0/71db354f/1/"
+  alt="Web Analytics"
+  referrerpolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- End of Statcounter Code -->
+</body>
+</html>
