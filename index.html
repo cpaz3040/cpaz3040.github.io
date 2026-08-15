@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Videos verticales</title>
+  <title>Aviso</title>
   <style>
     * { box-sizing: border-box; }
     html, body {
@@ -14,31 +14,16 @@
       font-family: Arial, sans-serif;
       background: #f6f7fb;
       color: #1f2937;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
     .page {
-      max-width: 1300px;
+      max-width: 600px;
+      width: 100%;
       margin: 0 auto;
       padding: 24px 16px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      align-items: stretch;
-    }
-    .container {
-      height: 90vh;
-      max-height: 780px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-    h1 {
-      text-align: center;
-      margin: 0;
-      font-size: clamp(16px, 2.4vw, 24px);
-      flex: 0 0 auto;
     }
     .card {
       background: #fff;
@@ -46,50 +31,16 @@
       padding: 14px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.08);
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      width: 100%;
-      flex: 1 1 auto;
-      min-height: 0;
-    }
-    h2 {
-      font-size: clamp(13px, 1.8vw, 18px);
-      line-height: 1.3;
-      margin: 0;
-      text-align: center;
-      flex: 0 0 auto;
-    }
-    .video-wrap {
-      position: relative;
-      aspect-ratio: 9 / 16;
-      height: 100%;
-      width: auto;
-      max-width: 100%;
-      overflow: hidden;
-      border-radius: 12px;
-      flex: 1 1 auto;
-      min-height: 0;
-    }
-    .video-wrap iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
     }
     .message-wrap {
       position: relative;
+      width: 100%;
       aspect-ratio: 9 / 16;
-      height: 100%;
-      width: auto;
-      max-width: 100%;
+      max-height: 80vh;
       overflow: hidden;
       border-radius: 12px;
-      flex: 1 1 auto;
-      min-height: 0;
       background: #1f2937;
       display: flex;
       align-items: center;
@@ -99,56 +50,20 @@
     }
     .message-wrap p {
       color: #fff;
-      font-size: clamp(14px, 2vw, 20px);
+      font-size: clamp(16px, 3vw, 22px);
       line-height: 1.5;
       margin: 0;
-    }
-    @media (max-width: 980px) {
-      .grid { grid-template-columns: 1fr; }
-      .container { height: 90vh; max-height: none; }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <section class="grid">
-      <div class="container">
-        <h1>07/08/2026 desde las 10:45</h1>
-        <article class="card">
-          <div class="video-wrap">
-            <iframe src="https://player.vimeo.com/video/1216447429?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              title="video vertical 1"
-              allowfullscreen></iframe>
-          </div>
-        </article>
+    <article class="card">
+      <div class="message-wrap">
+        <p>No está permitido la tenencia de perros en el edificio. Reglamento de Copropietarios.</p>
       </div>
-
-      <div class="container">
-        <h1>Video Dpto 7 A</h1>
-        <article class="card">
-          <h2>Así se escucha desde otros pisos</h2>
-          <div class="video-wrap">
-            <iframe src="https://player.vimeo.com/video/1215612105?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              title="video vertical 2"
-              allowfullscreen></iframe>
-          </div>
-        </article>
-      </div>
-
-      <div class="container">
-        <article class="card">
-          <div class="message-wrap">
-            <p>No está permitido la tenencia de perros en el edificio. Reglamento de Copropietarios.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+    </article>
   </main>
-  <script src="https://player.vimeo.com/api/player.js"></script>
   <!-- Default Statcounter code for Cpaz https://cpaz.github.io/ -->
   <script type="text/javascript">
   var sc_project=12792447;
